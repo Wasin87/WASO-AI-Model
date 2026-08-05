@@ -38,7 +38,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
           </button>
         </div>
 
-        {/* System Persona Card */}
+         
         <div className="p-3.5 rounded-xl bg-cyan-950/30 border border-cyan-500/30 text-xs space-y-2">
           <div className="flex items-center gap-2 font-semibold text-cyan-300">
             <Shield className="w-4 h-4 text-cyan-400" />
@@ -49,7 +49,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
           </p>
         </div>
 
-        {/* Language Selection */}
+     
         <div className="space-y-2">
           <label className="text-xs font-semibold text-slate-300 flex items-center gap-2">
             <Globe className="w-3.5 h-3.5 text-cyan-400" />

@@ -99,10 +99,9 @@ export const Header: React.FC<HeaderProps> = ({
             <span className="absolute top-1 right-1 w-2 h-2 rounded-full bg-rose-400 animate-ping" />
           </button>
         </div>
-
-        {/* Right: Icon Buttons Only for Desktop, Tablet, and Mobile */}
+ 
         <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
-          {/* PWA Install Button */}
+         
           {isInstallable && (
             <button
               onClick={onInstallApp}

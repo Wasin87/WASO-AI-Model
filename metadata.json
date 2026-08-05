@@ -1,0 +1,6 @@
+{
+  "name": "WASO - Wasin AI Responsive Virtual Intelligence",
+  "description": "WASO AI created by Wasin with Multimodal AI, WASO Live Real-Time Duplex Audio, Image Synthesis, Code Analysis, and Dual-Language (English/Bengali) support.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

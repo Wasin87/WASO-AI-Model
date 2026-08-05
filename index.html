@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>WASO - Wasin AI Responsive Virtual Intelligence</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="WASO (Wasin AI Responsive Virtual Intelligence) - Professional Senior Polyglot Software Architect & Systems Expert. Built by Wasin." />
+    <meta name="keywords" content="WASO, Wasin, AI, Virtual Intelligence, Coding Assistant, System Architect, Polyglot, Speech, PWA" />
+    <meta name="author" content="Wasin" />
+    <meta name="theme-color" content="#0a192f" />
+    
+    <!-- OpenGraph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="WASO - Wasin AI Responsive Virtual Intelligence" />
+    <meta property="og:description" content="WASO is a highly advanced, ultra-responsive virtual intelligence specializing in polyglot software architecture and real-time systems." />
+    <meta property="og:image" content="/logo.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="WASO - Wasin AI Responsive Virtual Intelligence" />
+    <meta property="twitter:description" content="WASO is a highly advanced, ultra-responsive virtual intelligence specializing in polyglot software architecture and real-time systems." />
+    <meta property="twitter:image" content="/logo.png" />
+
+    <!-- Browser Favicon & Touch Icons -->
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="WASO" />
+
+    <!-- PWA Web Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Font preconnects for super-fast loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- PWA Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('WASO PWA ServiceWorker successfully registered with scope: ', registration.scope);
+            })
+            .catch((error) => {
+              console.error('WASO PWA ServiceWorker registration failed: ', error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
+
+
